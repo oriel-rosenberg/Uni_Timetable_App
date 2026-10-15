@@ -1,0 +1,14 @@
+.gradle/
+.kotlin/
+build/
+local.properties
+*.apk
+
+# Signing key: keep a backup, but never publish it.
+keystore.properties
+keystore/
+*.jks
+*.keystore
+
+# Claude Code's per-machine permissions
+.claude/settings.local.json

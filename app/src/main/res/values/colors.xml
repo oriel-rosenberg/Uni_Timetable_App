@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches the Compose background, so the launch frame is indistinguishable from the app. -->
+    <color name="app_background">#FFFAFAFB</color>
+    <color name="accent">#FF3B5BDB</color>
+    <color name="launcher_background">#FF3B5BDB</color>
+</resources>

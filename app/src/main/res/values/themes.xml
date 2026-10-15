@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Platform.Theme.Timetable" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Base.Theme.Timetable" parent="Platform.Theme.Timetable">
+        <item name="android:windowBackground">@color/app_background</item>
+        <!-- For the system time picker, the one piece of UI that isn't Compose. -->
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Theme.Timetable" parent="Base.Theme.Timetable" />
+</resources>

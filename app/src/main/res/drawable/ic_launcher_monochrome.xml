@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The launcher icon in one colour, for Android's themed icons. The notebook is an outline. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M36,94C29,68 36,50 50,46"
+        android:strokeColor="#FF000000"
+        android:strokeLineCap="round"
+        android:strokeWidth="13" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M54,48a9,9 0,1 0,18 0a9,9 0,1 0,-18 0z" />
+    <path
+        android:pathData="M48,58L64,63"
+        android:strokeColor="#FF000000"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M46,67h50v5h-50a2.5,2.5 0,0 1,0 -5z" />
+    <path
+        android:pathData="M62,62h18v4"
+        android:strokeColor="#FF000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.5" />
+</vector>

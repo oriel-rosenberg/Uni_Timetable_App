@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Someone bent over a notebook at a table, seen from the side. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- back and shoulders -->
+    <path
+        android:pathData="M36,94C29,68 36,50 50,46"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="13" />
+    <!-- head, lowered over the page -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,48a9,9 0,1 0,18 0a9,9 0,1 0,-18 0z" />
+    <!-- arm -->
+    <path
+        android:pathData="M48,58L64,63"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="6" />
+    <!-- table -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M46,67h50v5h-50a2.5,2.5 0,0 1,0 -5z" />
+    <!-- notebook -->
+    <path
+        android:fillColor="#FFFFC94A"
+        android:pathData="M62,61h17a1.5,1.5 0,0 1,1.5 1.5v4.5h-20v-4.5a1.5,1.5 0,0 1,1.5 -1.5z" />
+</vector>

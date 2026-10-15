@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">לוז שיעורים</string>
+
+    <string name="type_lecture">הרצאה</string>
+    <string name="type_recitation">תרגול</string>
+    <string name="type_other">שיעור</string>
+
+    <string name="no_lessons">אין שיעורים</string>
+    <string name="today">היום</string>
+    <string name="week_of">השבוע של %1$s</string>
+    <string name="pending_button">להשלמה</string>
+    <string name="mark_done">סימון כהושלם</string>
+
+    <string name="backlog_title">שיעורים להשלמה</string>
+    <string name="backlog_empty">אין שיעורים להשלמה</string>
+    <string name="days_ago_today">היום</string>
+    <string name="days_ago_yesterday">אתמול</string>
+    <string name="days_ago_two">לפני יומיים</string>
+    <string name="days_ago_many">לפני %1$d ימים</string>
+    <string name="marked_done">סומן כהושלם</string>
+    <string name="undo">ביטול</string>
+    <string name="back">חזרה</string>
+
+    <string name="ok">אישור</string>
+    <string name="cancel">ביטול</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+
+    <!-- Long-press menu of a lesson -->
+    <string name="menu_remind">תזכורת…</string>
+    <string name="menu_change_reminder">שינוי או מחיקת תזכורת</string>
+    <string name="menu_edit">עריכה</string>
+    <string name="menu_delete">מחיקת השיעור</string>
+    <string name="scope_this">המופע הזה</string>
+    <string name="scope_all">כל המופעים</string>
+
+    <string name="reminder_title">תזכורת</string>
+    <string name="reminder_how_long">כמה זמן לפני השיעור?</string>
+    <string name="hours">שעות</string>
+    <string name="minutes">דקות</string>
+    <string name="reminder_every_time">להזכיר לפני כל מופע של השיעור הזה</string>
+    <string name="reminder_remove">מחיקת התזכורת</string>
+    <string name="has_reminder">יש תזכורת</string>
+    <string name="notifications_blocked">ההתראות של האפליקציה חסומות, ולכן התזכורת לא תוצג</string>
+
+    <string name="delete_title">למחוק את השיעור?</string>
+    <string name="delete_this">רק המופע של %1$s יימחק.</string>
+    <string name="delete_all">השיעור יימחק מכל השבועות, יחד עם התזכורות שלו.</string>
+
+    <string name="edit_title">עריכת שיעור</string>
+    <string name="field_name">שם הקורס</string>
+    <string name="field_name_all_hint">השם ישתנה בכל שיעורי הקורס</string>
+    <string name="field_type">סוג</string>
+    <string name="field_day">יום</string>
+    <string name="field_start">התחלה</string>
+    <string name="field_end">סיום</string>
+    <string name="field_place">מקום</string>
+    <string name="field_teacher">מרצה</string>
+    <string name="add_button">הוספת שיעור</string>
+    <string name="add_title">הוספת שיעור</string>
+    <string name="add_once">מופע אחד</string>
+    <string name="add_weekly">קבוע</string>
+    <string name="add_once_on">פעם אחת, ב־%1$s</string>
+    <string name="add_until">עד</string>
+    <string name="add_until_term_end">סוף הסמסטר (%1$s)</string>
+    <string name="add_until_too_early">התאריך הזה לפני השיעור הראשון</string>
+    <string name="edit_time_order">שעת הסיום צריכה להיות אחרי שעת ההתחלה</string>
+
+    <!-- Reminder notifications -->
+    <string name="reminders_channel">תזכורות לשיעורים</string>
+    <string name="reminder_in">עוד %1$s</string>
+    <string name="reminder_now">עכשיו</string>
+    <string name="reminder_started">השיעור מתחיל</string>
+    <string name="reminder_snooze">נודניק %1$d דק׳</string>
+    <string name="reminder_snoozed_until">נודניק עד %1$s</string>
+    <string name="reminder_body">%1$s ב%2$s</string>
+    <string name="reminder_body_place">%1$s ב%2$s בכיתה %3$s</string>
+    <string name="duration_minute">דקה</string>
+    <string name="duration_minutes">%1$d דקות</string>
+    <string name="duration_hour">שעה</string>
+    <string name="duration_two_hours">שעתיים</string>
+    <string name="duration_hours">%1$d שעות</string>
+    <string name="duration_hours_and_minutes">%1$s ו־%2$s</string>
+    <string name="duration_hours_and_minute">%1$s ו%2$s</string>
+
+    <string name="replace_schedule">החלפת מערכת שעות</string>
+    <string name="import_title">להחליף את מערכת השעות?</string>
+    <string name="import_summary">%1$s · %2$d שיעורים בשבוע</string>
+    <string name="import_confirm">החלפה</string>
+    <string name="import_cancel">ביטול</string>
+    <string name="import_failed_title">הקובץ אינו מערכת שעות תקינה</string>
+    <string name="import_ok">אישור</string>
+</resources>
