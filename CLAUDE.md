@@ -11,8 +11,9 @@ by day. Hebrew, right-to-left, offline. README.md has the code layout.
 - The toolchain (JDK, Android SDK, Gradle cache) lives in `C:\Dev\android-toolchain`. Nothing
   is on PATH; `build.cmd` sets the environment.
 - There is no phone or emulator on this PC. Check UI changes by reading the screenshots.
-  `ScreenshotTest` renders at phone size; `LessonMenuTest` drives the pop-ups and explains in its
-  header why it runs at the default screen size.
+  `ScreenshotTest` renders at phone size; `LessonMenuTest` and `AddLessonDialogTest` drive the
+  pop-ups. `DialogLayoutTest` checks a pop-up stays put while typing; pop-ups with text fields
+  set their own width (`PopUpProperties` in `LessonDialogs.kt`), as the platform's sizing made them jump.
 - The app must stay offline: no new permissions (`OfflineTest` fails otherwise) and no component
   that other apps can reach besides the launcher activity.
 - Raise `versionCode` in `app/build.gradle.kts` for every APK handed to the user.

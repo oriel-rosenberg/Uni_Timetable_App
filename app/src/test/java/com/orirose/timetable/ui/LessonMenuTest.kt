@@ -13,6 +13,7 @@ import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextReplacement
 import androidx.compose.ui.test.performTouchInput
+import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.orirose.timetable.bundledSchedule
 import com.orirose.timetable.data.model.Schedule
 import com.orirose.timetable.date
@@ -28,16 +29,13 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.RuntimeEnvironment
+import org.robolectric.annotation.Config
 import org.robolectric.Shadows.shadowOf
 import java.time.LocalDateTime
 
-/**
- * Drives a lesson's long-press menu and its three pop-ups on the real day screen.
- *
- * This runs at Robolectric's default screen size on purpose: at any other size a Compose pop-up
- * that holds a text field is laid out over and over there and the test never gets a turn.
- */
+/** Drives a lesson's long-press menu and its three pop-ups on the real day screen. */
 @RunWith(RobolectricTestRunner::class)
+@Config(qualifiers = RobolectricDeviceQualifiers.Pixel7)
 class LessonMenuTest {
 
     @get:Rule

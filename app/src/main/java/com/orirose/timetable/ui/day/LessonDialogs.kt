@@ -43,6 +43,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.DialogProperties
 import com.orirose.timetable.R
 import com.orirose.timetable.data.model.LessonType
 import com.orirose.timetable.domain.LessonDetails
@@ -66,6 +67,11 @@ sealed interface LessonDialog {
 
 private const val DEFAULT_REMINDER_MINUTES = 10
 private val FieldShape = RoundedCornerShape(8.dp)
+
+// The platform sizes a pop-up by measuring it at two widths in turn. With a text field inside, that
+// starts over with every letter typed and the pop-up jumps up and down, so these set their own width.
+private val PopUpProperties = DialogProperties(usePlatformDefaultWidth = false)
+private val PopUpWidth = Modifier.padding(horizontal = 24.dp).fillMaxWidth()
 
 // The days the day view shows; a lesson moved to a Friday or Saturday would be out of sight.
 private val Week = listOf(
@@ -94,6 +100,8 @@ fun ReminderDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
+        modifier = PopUpWidth,
+        properties = PopUpProperties,
         title = { Text(stringResource(R.string.reminder_title)) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
@@ -145,6 +153,8 @@ fun DeleteDialog(occurrence: Occurrence, onDelete: (everyTime: Boolean) -> Unit,
 
     AlertDialog(
         onDismissRequest = onDismiss,
+        modifier = PopUpWidth,
+        properties = PopUpProperties,
         title = { Text(stringResource(R.string.delete_title)) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
@@ -188,6 +198,8 @@ fun EditDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
+        modifier = PopUpWidth,
+        properties = PopUpProperties,
         title = { Text(stringResource(R.string.edit_title)) },
         text = {
             Column(
@@ -232,6 +244,8 @@ fun AddDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
+        modifier = PopUpWidth,
+        properties = PopUpProperties,
         title = { Text(stringResource(R.string.add_title)) },
         text = {
             Column(

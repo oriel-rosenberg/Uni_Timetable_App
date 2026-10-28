@@ -42,8 +42,6 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import androidx.test.espresso.AppNotIdleException
-import androidx.test.espresso.IdlingPolicies
 import com.github.takahirom.roborazzi.ExperimentalRoborazziApi
 import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
@@ -78,7 +76,6 @@ import java.io.File
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
-import java.util.concurrent.TimeUnit
 
 /**
  * Renders the real screens with the bundled schedule at phone size, on the PC, and saves them as
@@ -140,21 +137,11 @@ class ScreenshotTest {
         )
     }
 
-    /**
-     * Draws a pop-up over the day screen. Under Robolectric, at this screen size, a pop-up that
-     * holds a text field is laid out over and over and never reports idle (LessonMenuTest says
-     * more), so the wait is cut short; it is drawn all the same.
-     */
+    /** Draws a pop-up over the day screen. */
     private fun capturePopUp(name: String, schedule: Schedule = this.schedule, popUp: @Composable () -> Unit) {
-        IdlingPolicies.setMasterPolicyTimeout(2, TimeUnit.SECONDS)
-        try {
-            show {
-                Day(schedule = schedule)
-                popUp()
-            }
-        } catch (_: AppNotIdleException) {
-        } finally {
-            IdlingPolicies.setMasterPolicyTimeout(60, TimeUnit.SECONDS)
+        show {
+            Day(schedule = schedule)
+            popUp()
         }
         captureScreen(name)
     }

@@ -13,6 +13,7 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextReplacement
+import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.orirose.timetable.bundledSchedule
 import com.orirose.timetable.domain.ScheduleCalculator
 import com.orirose.timetable.ui.day.DayScreenContent
@@ -24,11 +25,13 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 import org.robolectric.shadows.ShadowDialog
 import java.time.LocalDateTime
 
-/** The "+" button and its pop-up, at the default screen size for the reason given in LessonMenuTest. */
+/** The "+" button and its pop-up. */
 @RunWith(RobolectricTestRunner::class)
+@Config(qualifiers = RobolectricDeviceQualifiers.Pixel7)
 class AddLessonDialogTest {
 
     @get:Rule
